@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css"><link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <nav>
+            <button id="get-new-deck">New deck of cards</button>
+            <p id="cards-remain">Cards remain:</p>
+        </nav>
+        <div class="container">
+            <div class="col">
+                <button id="draw-cards">Draw cards</button>
+                <p id="winning-text">Game of WAR!</p>
+            </div>
+            <div class="cards-container">
+                <p id ="computers-score">Computer's score: 0</p>
+                <div id="cards">
+                    <div class="card-slot"></div>
+                    <div class="card-slot"></div>
+                </div>
+                <p id ="players-score">Player's score: 0</p>
+            </div>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>

@@ -1,0 +1,116 @@
+body {
+    margin: 0;
+    font-family: 'Nunito Sans', sans-serif;
+    background-color: rgba(34, 111, 84, 1);
+    background-image: linear-gradient(145deg, rgba(34, 111, 84, 1) 0%, rgba(41, 53, 86, 1) 100%);
+}
+
+/* Typography */
+p {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 900;
+    margin-bottom: 0;
+    color: #f4f0bb;
+}
+
+p#winning-text {
+    font-size: 1.75rem;
+}
+
+p#computers-score,
+p#players-score {
+    font-size: 1.6rem;
+}
+
+p#cards-remain {
+    text-decoration: underline;
+    text-shadow: 4px 4px 15px rgba(67, 41, 31, 1);
+}
+
+/* Buttons */
+button {
+    margin: 15px;
+    padding: 5px 10px;
+    font-size: 1.5rem;
+    background-color: #f4f0bb;
+    color: #226f54; 
+    border: .5 px solid currentColor;
+    border-radius: 7px;
+    font-weight: 900;
+    cursor: pointer;
+    -webkit-box-shadow: 8px 8px 24px 0px rgba(0, 0, 0, 1);
+    -moz-box-shadow: 8px 8px 24px 0px rgba(0, 0, 0, 1);
+    box-shadow: 8px 8px 24px 0px rgba(0, 0, 0, 1);
+}
+
+button:hover,
+button:active {
+    background-color: #226f54;
+    color: #f4f0bb;
+    border-color: currentColor;
+}
+
+button#draw-cards {
+    order: 10;
+    background-color: #226f54;
+    color: #f4f0bb;
+    border-color: currentColor;
+}
+
+button#draw-cards:hover,
+button#draw-cards:active {
+    background-color: #f4f0bb;
+    color: #226f54;
+    border-color: currentColor;
+}
+
+button:disabled {
+    cursor: not-allowed;
+    pointer-events: all;
+    color: #495057;
+    background-color: #adb5bd;
+    border: currentColor;
+}   
+
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Game elements */
+.container {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #43291f88;
+    border: 7px solid #f4f0bbd7;
+    -webkit-box-shadow: inset 8px 8px 76px -35px rgba(244, 240, 187, 1);
+    -moz-box-shadow: inset 8px 8px 76px -35px rgba(244, 240, 187, 1);
+    box-shadow: inset 8px 8px 76px -35px rgba(244, 240, 187, 1);
+    padding: 25px;
+    width: 80vw;
+}
+
+div.card-slot {
+    margin: 0 auto;
+    border: .5px solid #f4f0bb;
+    margin-top: 30px;
+    border-radius: 5px;
+    height: 250px;
+    width: calc(250px * 5/7);
+    -webkit-box-shadow: 0px 0px 25px 5px rgba(244, 240, 187, 1);
+    -moz-box-shadow: 0px 0px 25px 5px rgba(244, 240, 187, 1);
+    box-shadow: 0px 0px 25px 5px rgba(244, 240, 187, 1);
+}
+
+.card {
+    width: 100%;
+    height: 100%;
+    margin: 0
+}
+
+.card-slot:last-child{
+    margin-bottom: 30px;
+}
